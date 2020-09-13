@@ -1,0 +1,1 @@
+# embulk-output-gcs_streaming
