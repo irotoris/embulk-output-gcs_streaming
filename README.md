@@ -1,7 +1,7 @@
 # Gcs Streaming file output plugin for Embulk
 
 Google Cloud Storage (GCS) Streaming file output plugin for Embulk.  
-No use local storage when upload to GCS. Using [Streming transters](https://cloud.google.com/storage/docs/streaming).
+No use local storage when upload to GCS. Using [Streaming transfers](https://cloud.google.com/storage/docs/streaming).
 
 ## Overview
 
@@ -17,8 +17,8 @@ No use local storage when upload to GCS. Using [Streming transters](https://clou
 - **path_prefix**: Prefix of output keys (string, required)
 - **file_ext**: Extension of output file (string, required)
 - **sequence_format**: Format of the sequence number of the output files (string, default value is `.%03d.%02d.`)
-- **content_type**: content type of output file (string, optional, default value is `application/octet-stream`)
-- **json_keyfile** full path of json_key (string, optional)
+- **content_type**: Content-Type of output file (string, optional, default value is `application/octet-stream`)
+- **json_keyfile**: Full path of json_key (string, optional)
 
 ### Authentication
 
@@ -32,6 +32,7 @@ Following [Authenticating as a service account](https://cloud.google.com/docs/au
 ## Example
 
 ```yaml
+out:
   type: gcs_streaming
   project_id: project
   bucket: budket
