@@ -19,11 +19,13 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile  "org.embulk:embulk-core:0.9.23"
-    provided "org.embulk:embulk-core:0.9.23"
+    compile  "org.embulk:embulk-core:0.9.20"
+    provided "org.embulk:embulk-core:0.9.20"
     compile "com.google.cloud:google-cloud-storage:1.71.0"
 
     testCompile "junit:junit:4.+"
+    testCompile "org.embulk:embulk-core:0.9.20:tests"
+    testCompile "org.embulk:embulk-standards:0.9.20"
 }
 
 task classpath(type: Copy, dependsOn: ["jar"]) {

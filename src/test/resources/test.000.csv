@@ -1,0 +1,3 @@
+id,account,ts,dt,message
+1,account1,2020-01-01 00:00:00,20200101,init
+2,account2,2020-02-01 12:00:00,20200201,init

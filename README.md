@@ -42,9 +42,29 @@ out:
     type: csv
 ```
 
-
 ## Build
 
 ```
 $ ./gradlew gem  # -t to watch change of files and rebuild continuously
+```
+
+## Test
+
+Prepare
+
+``` 
+    /*
+     * This test case requires environment variables
+     *   GCP_PROJECT_ID
+     *   GCP_BUCKET
+     *   GCP_JSON_KEYFILE
+     * And prepare gcloud authentication ADC, following command.
+     *   $ gcloud auth application-default login
+     */
+```
+
+Run
+
+```
+$ ./gradlew test
 ```
